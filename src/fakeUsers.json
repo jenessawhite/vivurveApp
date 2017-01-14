@@ -1,8 +1,8 @@
 {
   "client": {
-    "firstName": "Elektra",
-    "lastName": "Wrenholt",
-    "phone": "612-964-1363",
+    "firstName": "Abc",
+    "lastName": "Defg",
+    "phone": "123-456-7890",
     "location": "Minneapolis",
     "client": true,
     "bio": "Bio words here",
@@ -16,10 +16,10 @@
     ]
   },
   "trainer": {
-    "firstName": "Elektra",
-    "lastName": "Wrenholt",
-    "email": "ewrenholt@gmail.com",
-    "phone": "612-964-1363",
+    "firstName": "Abc",
+    "lastName": "Defg",
+    "email": "noreply@fake.com",
+    "phone": "123-456-7890",
     "trainingAreas": [
       {
         "area": "WeightLifting",
