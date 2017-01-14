@@ -16,7 +16,7 @@ class Contact extends Component {
       <ScrollView style={{backgroundColor: 'white'}}>
         <View style={styles.headingContainer}>
           <Icon color='white' name='games' size={62} />
-          <Text style={styles.heading}>Pricing</Text>
+          <Text style={styles.heading}>Hey Jenessa</Text>
         </View>
         <View style={styles.container}>
           <PricingCard
