@@ -11,45 +11,17 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 
 let styles = {}
 
-const NavigationBar = (toggleSideMenu) => {
+const NavigationBar = () => {
   const src = require('../../images/logo.png')
-  const LeftButton = (route, navigator, index, navState) => {
-    if (route.name !== 'home') {
-      return null
-    }
-    if (index > 0) {
-      const leftAction = navigator.pop
-      const leftIcon = 'chevron-left'
-      return (
-        <Icon
-          onPress={leftAction}
-          name={leftIcon} size={28} />
-      )
-    }
-    return (
-      <TouchableHighlight
-        style={{marginTop: 7, marginLeft: 9}}
-        onPress={toggleSideMenu}
-        underlayColor='transparent'>
-        <Icon
-          color='white'
-          name='menu'
-          size={28}
-        />
-      </TouchableHighlight>
-    )
+  const LeftButton = () => {
+    return null
   }
 
   const RightButton = (/* route, navigator, index, navState */) => {
     return null
   }
 
-  const Title = (route, navigator, index, navState) => {
-    if (route.title) {
-      return (
-        <NavTitleComponent title={route.title} />
-      )
-    }
+  const Title = () => {
     return (
       <NavTitleIcon src={src} />
     )
