@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Navigator } from 'react-native'
-import Contact from './Contact'
+import TProfile from './TProfile'
 import navigationBar from 'HSNavBar'
 
-const initialRoute = {component: Contact}
+const initialRoute = {component: TProfile}
 
-class ContactNav extends Component {
+class TProfileNav extends Component {
   constructor () {
     super()
     this.renderScene = this.renderScene.bind(this)
@@ -25,4 +25,4 @@ class ContactNav extends Component {
   }
 }
 
-export default ContactNav
+export default TProfileNav
