@@ -8,7 +8,7 @@ import Home from './home/HomeNav'
 import About from './about/AboutRootContainer'
 import Contact from './contact/ContactRootContainer'
 import Pricing from './pricing/PricingRootContainer'
-import More from './more/MoreRootContainer'
+import Profile from './profile/ProfileRootContainer'
 
 import { Tabs, Tab } from 'react-native-elements'
 
@@ -75,15 +75,15 @@ class App extends Component {
           <Pricing />
         </Tab>
         <Tab
-          tabStyle={selectedTab !== 'more' && { marginBottom: -6 }}
+          tabStyle={selectedTab !== 'profile' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 8}]}
-          selected={selectedTab === 'more'}
-          title={selectedTab === 'more' ? 'MORE' : null}
+          selected={selectedTab === 'profile'}
+          title={selectedTab === 'profile' ? 'PROFILE' : null}
           renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='list' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.primary} name='list' size={26} />}
-          onPress={() => this.changeTab('more')}>
-          <More />
+          onPress={() => this.changeTab('profile')}>
+          <Profile />
         </Tab>
       </Tabs>
 

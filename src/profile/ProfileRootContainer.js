@@ -1,4 +1,4 @@
-import MoreNav from './MoreNav'
+import ProfileNav from './ProfileNav'
 import { connect } from 'react-redux'
 
 function mapStateToProps (state) {
@@ -10,4 +10,4 @@ function mapDispatchToProps (dispatch) {
 }
 
 // export default connect(mapStateToProps, mapDispatchToProps)(HomeNav)
-export default MoreNav
+export default ProfileNav

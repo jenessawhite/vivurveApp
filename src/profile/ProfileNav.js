@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Navigator } from 'react-native'
-import More from './More'
+import Profile from './Profile'
 import navigationBar from 'HSNavBar'
 
-const initialRoute = {component: More}
+const initialRoute = {component: Profile}
 
-class MoreNav extends Component {
+class ProfileNav extends Component {
   constructor () {
     super()
     this.renderScene = this.renderScene.bind(this)
@@ -25,4 +25,4 @@ class MoreNav extends Component {
   }
 }
 
-export default MoreNav
+export default ProfileNav

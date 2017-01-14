@@ -4,6 +4,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 let styles
 
 import {
+  Card,
+  Button,
   List,
   ListItem,
   Text,
@@ -63,7 +65,7 @@ const list2 = [
   }
 ]
 
-class More extends Component {
+class Profile extends Component {
   constructor () {
     super()
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
@@ -87,64 +89,40 @@ class More extends Component {
       <ScrollView keyboardShouldPersistTaps="always" style={styles.mainContainer}>
         <View style={styles.hero}>
           <Icon color='white' name='sentiment-very-satisfied' size={62} />
-          <Text style={styles.heading}>Searchbar & List</Text>
+          <Text style={styles.heading}>Firstname Lastname</Text>
         </View>
-        <View style={{marginTop: 10, marginBottom: 0}}>
-          <SearchBar
-            placeholder='Type Here...' />
-        </View>
-        <View style={{marginTop: 10, marginBottom: 0}}>
-          <SearchBar
-            noIcon
-            placeholder='Type Here...' />
-        </View>
-        <View style={{marginTop: 10, marginBottom: 0}}>
-          <SearchBar
-            round
-            placeholder='Type Here...' />
-        </View>
-        <View style={{marginTop: 10, marginBottom: 0}}>
-          <SearchBar
-            lightTheme
-            placeholder='Type Here...' />
-        </View>
-        <View style={{marginTop: 10, marginBottom: 0}}>
-          <SearchBar
-            noIcon
-            lightTheme
-            placeholder='Type Here...' />
-        </View>
-        <View style={{marginTop: 10, marginBottom: 0}}>
-          <SearchBar
-            round
-            lightTheme
-            placeholder='Type Here...' />
-        </View>
-        <List>
-          <ListView
-            renderRow={this.renderRow}
-            dataSource={this.state.dataSource}
-            />
-        </List>
-        <List containerStyle={{marginBottom: 20}}>
-        {
-          list2.map((l, i) => (
-            <ListItem
-              roundAvatar
-              avatar={{ uri: l.avatar_url }}
-              key={i}
-              onPress={log}
-              title={l.name}
-              subtitle={l.subtitle}
-            />
-          ))
-        }
-        </List>
-        <ListItem
-          roundAvatar
-          title='Nader Dabit'
-          avatar={require('../images/avatar1.jpg')}
-         />
+
+        <Card title='Location'>
+          <Text style={{marginBottom: 10}}>
+            Minneapolis
+          </Text>
+        </Card>
+
+        <Card title='My Fitness Goal is...'>
+          <Text style={{marginBottom: 10}}>
+            I want to be able to do a pull up
+          </Text>
+        </Card>
+
+        <Card title='Activities'>
+          <Text style={{marginBottom: 10}}>
+            Boxing - beginner
+          </Text>
+        </Card>
+
+        <Card title='Bio'>
+          <Text style={{marginBottom: 10}}>
+            Info about me
+          </Text>
+        </Card>
+
+        <Card>
+         <Button
+            icon={{name: 'mode-edit'}}
+            backgroundColor='#03A9F4'
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+            title='Edit' />
+        </Card>
       </ScrollView>
     )
   }
@@ -171,4 +149,4 @@ styles = StyleSheet.create({
   }
 })
 
-export default More
+export default Profile
