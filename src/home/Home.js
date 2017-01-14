@@ -31,6 +31,12 @@ class Home extends Component {
           buttonStyle={styles.button} />
         <Button
           buttonStyle={styles.button}
+          backgroundColor={socialColors.stumbleupon}
+          icon={{name: 'account-balance'}}
+          onPress={() => toggleSideMenu()}
+          title='TOGGLE SIDE MENU'/>
+        <Button
+          buttonStyle={styles.button}
           iconRight
           backgroundColor={socialColors.quora}
           icon={{name: 'invert-colors'}}

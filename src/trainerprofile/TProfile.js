@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ScrollView, View, StyleSheet } from 'react-native'
 import colors from 'HSColors'
 import Icon from 'react-native-vector-icons/MaterialIcons'
-
+import StarRating from 'react-native-star-rating';
 import {
   PricingCard,
   Text
