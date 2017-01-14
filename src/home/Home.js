@@ -18,7 +18,6 @@ const log = () => {
 
 class Home extends Component {
   render () {
-    const { toggleSideMenu } = this.props
     return (
       <ScrollView style={{backgroundColor: 'black'}}>
         <View style={styles.hero}>
@@ -30,12 +29,6 @@ class Home extends Component {
           onPress={() => log('test')}
           title='ViVurve'
           buttonStyle={styles.button} />
-        <Button
-          buttonStyle={styles.button}
-          backgroundColor={socialColors.stumbleupon}
-          icon={{name: 'account-balance', type: 'material-community'}}
-          onPress={() => toggleSideMenu()}
-          title='TOGGLE SIDE MENU'/>
         <Button
           buttonStyle={styles.button}
           iconRight

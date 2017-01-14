@@ -1,0 +1,38 @@
+{
+  "client": {
+    "firstName": "Elektra",
+    "lastName": "Wrenholt",
+    "phone": "612-964-1363",
+    "location": "Minneapolis",
+    "client": true,
+    "bio": "Bio words here",
+    "goal/mission": "This is my goal and mission",
+    "Experience Level": "basic",
+    "photo": "img.jpg",
+    "waiverSigned": true,
+    "trainingInterests": [
+      "Running",
+      "WeightLifting"
+    ]
+  },
+  "trainer": {
+    "firstName": "Elektra",
+    "lastName": "Wrenholt",
+    "email": "ewrenholt@gmail.com",
+    "phone": "612-964-1363",
+    "trainingAreas": [
+      {
+        "area": "WeightLifting",
+        "certification": true,
+        "certificationDetail": "ASM",
+        "primary": true
+      }
+    ],
+    "location": "Minneapolis",
+    "trainer": true,
+    "bio": "Bio words here",
+    "photo": "img.jpg",
+    "waiverSigned": true,
+    "goal/mission": "This is my goal and mission",
+  }
+}

@@ -28,7 +28,6 @@ class App extends Component {
     })
   }
   render () {
-    const { toggleSideMenu } = this.props
     const { selectedTab } = this.state
     return (
       <Tabs hidesTabTouch>
@@ -40,7 +39,7 @@ class App extends Component {
           renderIcon={() => <Icon color={colors.grey2} name='directions-run' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.primary} name='directions-run' size={26} />}
           onPress={() => this.changeTab('home')}>
-          <Home toggleSideMenu={toggleSideMenu} />
+          <Home />
         </Tab>
         <Tab
           tabStyle={selectedTab !== 'about' && { marginBottom: -6 }}

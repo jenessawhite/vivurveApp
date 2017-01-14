@@ -11,16 +11,14 @@ class HomeNav extends Component {
     this.renderScene = this.renderScene.bind(this)
   }
   renderScene (route, navigator) {
-    const { toggleSideMenu } = this.props
     return (
-      <route.component toggleSideMenu={toggleSideMenu} navigator={navigator} {...route.passProps} />
+      <route.component navigator={navigator} {...route.passProps} />
     )
   }
   render () {
-    const { toggleSideMenu } = this.props
     return (
       <Navigator
-        navigationBar={navigationBar(toggleSideMenu)}
+        navigationBar={navigationBar()}
         initialRoute={initialRoute}
         renderScene={this.renderScene.bind(this)} />
     )

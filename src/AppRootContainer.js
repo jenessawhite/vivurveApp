@@ -13,12 +13,6 @@ class AppRootContainer extends Component {
     this.state = {
       toggled: false
     }
-    this.toggleSideMenu = this.toggleSideMenu.bind(this)
-  }
-  toggleSideMenu () {
-    this.setState({
-      toggled: !this.state.toggled
-    })
   }
   render () {
     const list = [
@@ -71,7 +65,7 @@ class AppRootContainer extends Component {
         toggledContainerStyle={{borderLeftWidth: 1, borderLeftColor: '#ededed'}}
         isOpen={this.state.toggled}
         MenuComponent={MenuComponent}>
-        <App toggleSideMenu={this.toggleSideMenu} />
+        <App />
       </SideMenu>
     )
   }
