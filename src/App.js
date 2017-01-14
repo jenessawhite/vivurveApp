@@ -37,8 +37,8 @@ class App extends Component {
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 7}]}
           selected={selectedTab === 'home'}
           title={selectedTab === 'home' ? 'HOME' : null}
-          renderIcon={() => <Icon color={colors.grey2} name='whatshot' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary} name='whatshot' size={26} />}
+          renderIcon={() => <Icon color={colors.grey2} name='directions-run' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.primary} name='directions-run' size={26} />}
           onPress={() => this.changeTab('home')}>
           <Home toggleSideMenu={toggleSideMenu} />
         </Tab>

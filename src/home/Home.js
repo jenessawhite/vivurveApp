@@ -20,15 +20,15 @@ class Home extends Component {
   render () {
     const { toggleSideMenu } = this.props
     return (
-      <ScrollView style={{backgroundColor: 'white'}}>
+      <ScrollView style={{backgroundColor: 'black'}}>
         <View style={styles.hero}>
-          <Icon color='white' name='whatshot' size={62} />
-          <Text style={styles.heading}>Buttons</Text>
+          <Icon color='white' name='directions-run' size={62} />
+          <Text style={styles.heading}>ViVurve</Text>
         </View>
         <Button
           backgroundColor={socialColors.facebook}
-          onPress={() => log()}
-          title='BUTTON'
+          onPress={() => log('test')}
+          title='ViVurve'
           buttonStyle={styles.button} />
         <Button
           buttonStyle={styles.button}
