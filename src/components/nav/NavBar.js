@@ -12,7 +12,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 let styles = {}
 
 const NavigationBar = () => {
-  const src = require('../../images/logo.png')
+  const src = require('../../images/logoNoTag.png')
   const LeftButton = () => {
     return null
   }
