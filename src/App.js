@@ -114,7 +114,7 @@ styles = StyleSheet.create({
     color: colors.fontPrimary,
     ...Platform.select({
       ios: {
-        // fontFamily: fonts.ios.black
+        fontFamily: fonts.ios.black
       }
     })
   }

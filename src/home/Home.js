@@ -33,19 +33,20 @@ class Home extends Component {
       trainers= arrayOfTrainers
     } else {
       trainers = arrayOfTrainers.filter((v,i) => {
-        return
-          v.firstName.toLowerCase().indexOf(searchValue.toLowerCase()) > -1
-          console.log(searchValue);
+        return (
+          (v.firstName.toLowerCase() + " " + v.lastName.toLowerCase() + " " + v.trainingAreas[0].area.toLowerCase()).indexOf(searchValue.toLowerCase()) > -1
+        )
       })
     }
     this.setState({
+      searchValue,
       trainers
     })
   }
   render () {
     return (
     <View style={{backgroundColor: 'white', marginTop: 70, marginBottom: 0}}>
-      <View style={{marginTop: 70}}>
+      <View style={{marginTop: 0}}>
         <SearchBar
           lightTheme
           placeholder='Enter a trainer name, location, or specialty'
@@ -54,26 +55,26 @@ class Home extends Component {
           value={this.state.searchValue}
         />
       </View>
-      <ScrollView style={{backgroundColor: 'white', marginTop: 10, marginBottom: 0}}>
-
-      <Text h4> Recommended Trainers </Text>
-
-      <List containerStyle={{marginBottom: 20}}>
-        {
-          this.state.trainers.map((trainer, i) => (
-            <View key={i}>
-                <ListItem
-                roundAvatar
-                avatar={{uri:'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg'}}
-                title={trainer.firstName + ' ' + trainer.lastName}
-                subtitle={trainer.trainingAreas[0].area}
-                rightIcon={{name:'check-circle'}}
-                />
-            </View>
-          ))
-        }
-      </List>
-      </ScrollView>
+      <View>
+        <Text h4> Recommended Trainers </Text>
+        <ScrollView style={{backgroundColor: 'white', marginTop: 10, marginBottom: 0}}>
+          <List containerStyle={{marginBottom: 20}}>
+            {
+              this.state.trainers.map((trainer, i) => (
+                <View key={i}>
+                    <ListItem
+                    roundAvatar
+                    avatar={{uri:'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg'}}
+                    title={trainer.firstName + ' ' + trainer.lastName}
+                    subtitle={trainer.trainingAreas[0].area}
+                    rightIcon={{name:'check-circle'}}
+                    />
+                </View>
+              ))
+            }
+          </List>
+        </ScrollView>
+      </View>
     </View>
     )
   }

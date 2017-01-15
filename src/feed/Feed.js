@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { ScrollView, View, StyleSheet, Image } from 'react-native'
 import colors from 'HSColors'
+import Hyperlink from 'react-native-hyperlink'
 
 import data from '../data/hello.json'
 
@@ -40,13 +41,13 @@ class Feed extends Component {
             {
               articles.map((article, index) => {
                 return (
-                  <Card containerStyle={{marginTop: 5}} key={index}>
-                    <Text style={styles.headline}>{article.headline}</Text>
+                  <Card containerStyle={{marginTop: 15}} key={index}>
+                    <Image
+                      style={{width: 120, height: 120}}
+                      resizeMode='cover'
+                      source={{uri: article.imageUrl}} />
                     <View key={index} style={styles.user}>
-                      <Image
-                        style={{width: 100, height: 100}}
-                        resizeMode='cover'
-                        source={{uri: article.imageUrl}} />
+                      <Text style={styles.headline}>{article.headline}</Text>
                       <Text style={styles.name}>By: {article.author}</Text>
                     </View>
                   </Card>
