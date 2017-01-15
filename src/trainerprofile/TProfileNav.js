@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Navigator } from 'react-native'
-import Pricing from './Pricing'
+import TProfile from './TProfile'
 import navigationBar from 'HSNavBar'
 
-const initialRoute = {component: Pricing}
+const initialRoute = {component: TProfile}
 
-class PricingNav extends Component {
+class TProfileNav extends Component {
   constructor () {
     super()
     this.renderScene = this.renderScene.bind(this)
@@ -25,4 +25,4 @@ class PricingNav extends Component {
   }
 }
 
-export default PricingNav
+export default TProfileNav

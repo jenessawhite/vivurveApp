@@ -13,7 +13,7 @@ import {
 
 let styles = {}
 
-class Contact extends Component {
+class Schedule extends Component {
   componentDidMount () {
     this.refs.form2.refs.textInputRef.focus()
   }
@@ -21,8 +21,8 @@ class Contact extends Component {
     return (
       <ScrollView style={{backgroundColor: 'white'}} keyboardShouldPersistTaps="always">
         <View style={styles.headingContainer}>
-          <Icon color='white' name='pets' size={62} />
-          <Text style={styles.heading}>Forms</Text>
+          <Icon color='white' name='today' size={62} />
+          <Text style={styles.heading}>Scheduling</Text>
         </View>
         <FormLabel
           containerStyle={styles.labelContainerStyle}>Name</FormLabel>
@@ -36,11 +36,6 @@ class Contact extends Component {
         <FormInput ref='form1' placeholder='Please enter your address...' />
         <FormLabel containerStyle={styles.labelContainerStyle}>Phone</FormLabel>
         <FormInput placeholder='Please enter your phone number...' />
-        <Button
-          onPress={() => console.log('yo')}
-          icon={{name: 'done'}}
-          buttonStyle={{marginTop: 15}}
-          title='SUBMIT' />
         <View style={{marginTop: 20, marginBottom: 49}}>
           <CheckBox
             title='Click Here'
@@ -113,6 +108,11 @@ class Contact extends Component {
             uncheckedColor='black'
             />
         </View>
+        <Button
+             onPress={() => console.log('yo')}
+             icon={{name: 'done'}}
+             buttonStyle={{marginTop: 15}}
+             title='SUBMIT' />
       </ScrollView>
     )
   }
@@ -136,4 +136,4 @@ styles = StyleSheet.create({
   }
 })
 
-export default Contact
+export default Schedule

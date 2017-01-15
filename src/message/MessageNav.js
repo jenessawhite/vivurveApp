@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Navigator } from 'react-native'
-import About from './About'
+import Message from './Message'
 import navigationBar from 'HSNavBar'
 
-const initialRoute = {component: About}
+const initialRoute = {component: Message}
 
-class AboutNav extends Component {
+class MessageNav extends Component {
   constructor () {
     super()
     this.renderScene = this.renderScene.bind(this)
@@ -25,4 +25,4 @@ class AboutNav extends Component {
   }
 }
 
-export default AboutNav
+export default MessageNav

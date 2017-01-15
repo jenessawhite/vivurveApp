@@ -1,5 +1,5 @@
 {
-  "name": "HackathonStarter",
+  "name": "ViVurve",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -22,11 +22,13 @@
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "react-native-star-rating": "^1.0.6",
   },
   "devDependencies": {
     "babel-jest": "18.0.0",
     "babel-preset-react-native": "1.9.1",
+    "invariant": "^2.2.2",
     "jest": "18.1.0",
     "react-test-renderer": "~15.4.0-rc.4"
   },

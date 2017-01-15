@@ -1,0 +1,38 @@
+{
+  "client": {
+    "firstName": "Abc",
+    "lastName": "Defg",
+    "phone": "123-456-7890",
+    "location": "Minneapolis",
+    "client": true,
+    "bio": "Bio words here",
+    "goal/mission": "This is my goal and mission",
+    "Experience Level": "basic",
+    "photo": "img.jpg",
+    "waiverSigned": true,
+    "trainingInterests": [
+      "Running",
+      "WeightLifting"
+    ]
+  },
+  "trainer": {
+    "firstName": "Abc",
+    "lastName": "Defg",
+    "email": "noreply@fake.com",
+    "phone": "123-456-7890",
+    "trainingAreas": [
+      {
+        "area": "WeightLifting",
+        "certification": true,
+        "certificationDetail": "ASM",
+        "primary": true
+      }
+    ],
+    "location": "Minneapolis",
+    "trainer": true,
+    "bio": "Bio words here",
+    "photo": "img.jpg",
+    "waiverSigned": true,
+    "goal/mission": "This is my goal and mission",
+  }
+}

@@ -1,4 +1,4 @@
-import MoreNav from './MoreNav'
+import ScheduleNav from './ScheduleNav'
 import { connect } from 'react-redux'
 
 function mapStateToProps (state) {
@@ -9,5 +9,5 @@ function mapDispatchToProps (dispatch) {
   return {}
 }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(HomeNav)
-export default MoreNav
+// export default connect(mapStateToProps, mapDispatchToProps)(ContactNav)
+export default ScheduleNav
