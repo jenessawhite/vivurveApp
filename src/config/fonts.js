@@ -4,7 +4,7 @@
 
 export default {
   ios: {
-    regular: 'System',
+    regular: 'Open Sans',
     light: 'System',
     lightItalic: 'System',
     bold: 'System',
