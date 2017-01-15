@@ -36,7 +36,7 @@ styles = StyleSheet.create({
     marginTop: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 40,
+    padding: 10,
     backgroundColor: colors.secondary2
   },
   heading: {
