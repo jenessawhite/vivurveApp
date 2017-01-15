@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ScrollView, View, StyleSheet } from 'react-native'
 import colors from 'HSColors'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import Calendar from 'react-native-calendar'
 
 import {
   Button,
@@ -14,22 +15,63 @@ import {
 let styles = {}
 
 class Schedule extends Component {
-  // componentDidMount () {
-  //   this.refs.form2.refs.textInputRef.focus()
-  // }
   render () {
     return (
-      <ScrollView style={{backgroundColor: 'white'}} keyboardShouldPersistTaps="always">
-        <View style={styles.headingContainer}>
-          <Icon color='white' name='today' size={62} />
-          <Text style={styles.heading}>Scheduling</Text>
+      <ScrollView style={styles.heading} keyboardShouldPersistTaps="always">
+        <Text>See your upcoming appointments below</Text>
+        <View style={styles.calendar}>
+          <Calendar
+            showEventIndicators
+            customStyle={customStyle} // Customize any pre-defined styles
+            dayHeadings={['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']}               // Default: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+            eventDates={['2017-01-07', '2017-01-14', '2017-01-15', '2017-01-21']}       // Optional array of moment() parseable dates that will show an event indicator
+            events={[{date:'2017-01-07'}, {date:'2017-01-14'}, {date:'2017-01-15'}, {date:'2017-01-21'}]}// Optional array of event objects with a date property and custom styles for the event indicator
+            onSwipeNext={this.onSwipeNext}    // Callback for forward swipe event
+            onSwipePrev={this.onSwipePrev}    // Callback for back swipe event
+            onTouchNext={this.onTouchNext}    // Callback for next touch event
+            onTouchPrev={this.onTouchPrev}    // Callback for prev touch event
+            scrollEnabled={true}              // False disables swiping. Default: False
+            showControls={true}               // False hides prev/next buttons. Default: False
+            showEventIndicators={true}        // False hides event indicators. Default:False
+            weekStart={0} // Day on which week starts 0 - Sunday, 1 - Monday, 2 - Tuesday, etc, Default: 1
+          />
         </View>
-
-
       </ScrollView>
     )
   }
 }
+
+const customStyle = {
+    day: {
+      color: colors.dkGreyBg,
+      fontSize: 15,
+      textAlign: 'center',
+    },
+    calendarControls: {
+      backgroundColor: 'white',
+    },
+    calendarHeading: {
+      backgroundColor: 'white',
+    },
+    hasEventCircle: {
+      backgroundColor: colors.primary,
+    },
+    weekendHeading: {
+      color: colors.dkGreyBg,
+    },
+    weekendDayText: {
+      color: colors.dkGreyBg,
+    },
+    currentDayText: {
+      color: colors.dkGreyBg,
+    },
+    currentDayCircle: {
+      backgroundColor: colors.secondary,
+    },
+    selectedDayCircle: {
+      backgroundColor: colors.secondary,
+    },
+  }
 
 styles = StyleSheet.create({
   headingContainer: {
@@ -40,26 +82,15 @@ styles = StyleSheet.create({
     backgroundColor: colors.secondary2
   },
   heading: {
-    color: 'white',
-    marginTop: 10,
-    fontSize: 22
+    backgroundColor: 'white',
+    marginTop: 70,
   },
   labelContainerStyle: {
     marginTop: 8
+  },
+  calendar: {
+    alignSelf: 'center',
   }
 })
 
 export default Schedule
-
-{/* <FormLabel
-  containerStyle={styles.labelContainerStyle}>Name</FormLabel>
-<FormInput
-  ref='form2'
-  containerRef='containerRefYOYO'
-  textInputRef='textInputRef'
-  placeholder='Please enter your name...'
-/>
-<FormLabel containerStyle={styles.labelContainerStyle}>Address</FormLabel>
-<FormInput ref='form1' placeholder='Please enter your address...' />
-<FormLabel containerStyle={styles.labelContainerStyle}>Phone</FormLabel>
-<FormInput placeholder='Please enter your phone number...' /> */}

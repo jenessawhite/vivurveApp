@@ -32,11 +32,7 @@ class Feed extends Component {
   render () {
     const { selectedIndex } = this.state
     return (
-      <ScrollView style={{backgroundColor: 'white'}}>
-        <View style={styles.headerContainer}>
-          <Icon color='white' name='invert-colors' size={62} />
-          <Text style={styles.heading}>Feed</Text>
-        </View>
+      <ScrollView style={styles.heading}>
         <View style={styles.container}>
             {
               articles.map((article, index) => {
@@ -72,9 +68,8 @@ styles = StyleSheet.create({
     backgroundColor: colors.secondary
   },
   heading: {
-    color: 'white',
-    marginTop: 10,
-    fontSize: 22
+    backgroundColor: 'white',
+    marginTop: 60,
   },
   fonts: {
     marginBottom: 8
