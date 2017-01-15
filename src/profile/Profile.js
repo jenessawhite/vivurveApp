@@ -55,7 +55,7 @@ class Profile extends Component {
          Bio:
         </Text>
         <Text style={styles.body}>
-        Hi! I'm Steve and I'm new to the Minneapolis area.  I'm hoping to find a personal trainer who can help me with general strength training.  I have never had a fitness plan.
+        Hi! I'm Steve and I'm new to the Minneapolis area.  I am hoping to find a personal trainer who can help me with general strength training.  I have never had a fitness plan.
          </Text>
 
          <Text style={styles.subheading}>
