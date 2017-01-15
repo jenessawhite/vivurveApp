@@ -20,7 +20,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      selectedTab: 'home'
+      selectedTab: 'feed'
     }
     this.changeTab = this.changeTab.bind(this)
   }
@@ -92,9 +92,8 @@ class App extends Component {
           renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.white} name='account-circle' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.secondary} name='account-circle' size={26} />}
           onPress={() => this.changeTab('profile')}>
-          <Profile />
+          <TProfile />
         </Tab>
-
       </Tabs>
 
     )

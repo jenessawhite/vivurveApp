@@ -34,7 +34,7 @@ class Home extends Component {
     } else {
       trainers = arrayOfTrainers.filter((v,i) => {
         return (
-          (v.firstName.toLowerCase() + " " + v.lastName.toLowerCase() + " " + v.trainingAreas[0].area.toLowerCase()).indexOf(searchValue.toLowerCase()) > -1
+          (v.firstName.toLowerCase() + " " + v.lastName.toLowerCase() + " " + v.location[0].city.toLowerCase() + " " + v.trainingAreas[0].area.toLowerCase()).indexOf(searchValue.toLowerCase()) > -1
         )
       })
     }

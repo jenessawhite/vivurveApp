@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { ScrollView, ListView, Image, View, StyleSheet } from 'react-native'
 import colors from 'HSColors'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import Calendar from 'react-native-calendar'
+
 import {
   Card,
   Button,
@@ -69,11 +71,66 @@ class TProfile extends Component {
           <Text style={styles.subheading}>
            Availability
           </Text>
+          <Calendar
+            showEventIndicators
+            customStyle={customStyle} // Customize any pre-defined styles
+            dayHeadings={['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']}               // Default: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+            eventDates={['2017-01-07', '2017-01-14', '2017-01-15', '2017-01-21']}       // Optional array of moment() parseable dates that will show an event indicator
+            events={[{date:'2017-01-07'}, {date:'2017-01-14'}, {date:'2017-01-15'}, {date:'2017-01-21'}]}// Optional array of event objects with a date property and custom styles for the event indicator
+            onSwipeNext={this.onSwipeNext}    // Callback for forward swipe event
+            onSwipePrev={this.onSwipePrev}    // Callback for back swipe event
+            onTouchNext={this.onTouchNext}    // Callback for next touch event
+            onTouchPrev={this.onTouchPrev}    // Callback for prev touch event
+            scrollEnabled={true}              // False disables swiping. Default: False
+            showControls={true}               // False hides prev/next buttons. Default: False
+            showEventIndicators={true}        // False hides event indicators. Default:False
+            weekStart={0} // Day on which week starts 0 - Sunday, 1 - Monday, 2 - Tuesday, etc, Default: 1
+          />
 
+          <Button
+            raised
+            icon={{name: 'today', color: colors.fontPrimary}}
+            backgroundColor= {colors.secondary}
+            color={colors.fontPrimary}
+            title='Book Me'
+            onPress={ url => alert('Booked!') }
+          />
       </ScrollView>
     )
   }
 }
+const customStyle = {
+    day: {
+      color: colors.dkGreyBg,
+      fontSize: 15,
+      textAlign: 'center',
+    },
+    calendarControls: {
+      backgroundColor: 'white',
+    },
+    calendarHeading: {
+      backgroundColor: 'white',
+    },
+    hasEventCircle: {
+      backgroundColor: colors.primary,
+    },
+    weekendHeading: {
+      color: colors.dkGreyBg,
+    },
+    weekendDayText: {
+      color: colors.dkGreyBg,
+    },
+    currentDayText: {
+      color: colors.dkGreyBg,
+    },
+    currentDayCircle: {
+      backgroundColor: colors.secondary,
+    },
+    selectedDayCircle: {
+      backgroundColor: colors.secondary,
+    },
+  }
+
 
 styles = StyleSheet.create({
   mainContainer: {

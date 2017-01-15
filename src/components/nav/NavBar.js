@@ -40,6 +40,10 @@ const NavigationBar = () => {
 }
 
 styles = StyleSheet.create({
+  logo: {
+    height: 65,
+    marginTop:10
+  },
   navBar: {
     height: 65,
     backgroundColor: "#5cccf4",

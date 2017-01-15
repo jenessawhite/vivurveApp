@@ -40,7 +40,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+       "location": [
+      {
+        "city": "Minneapolis",
+        "state": "MN"
+}
+],
       "trainer": true,
       "bio": "Bio words here",
       "photo": "img.jpg",
@@ -61,7 +66,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "Stillwater",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Mary is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -82,7 +92,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "Roseville",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Sarah is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -103,7 +118,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "St. Paul",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Janice is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -124,7 +144,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+     "location": [
+      {
+        "city": "Minneapolis",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Chris is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -145,7 +170,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "Minneapolis",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Jill is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -166,7 +196,12 @@
           "primary": true
         }
       ],
-      "location": "Bloomington",
+      "location": [
+      {
+        "city": "St. Paul",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Karren is a Yoga professional Certified through CorePowers training center",
       "photo": "img.jpg",
@@ -187,7 +222,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+     "location": [
+      {
+        "city": "Bloomington",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Nancy is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -208,7 +248,12 @@
           "primary": true
         }
       ],
-      "location": "Richfield",
+      "location": [
+      {
+        "city": "Eden Prairie",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Nicole is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -229,7 +274,12 @@
           "primary": true
         }
       ],
-      "location": "St. Paul",
+     "location": [
+      {
+        "city": "Minneapolis",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Mike is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -250,7 +300,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "Maple Grove",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Stephanie is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -271,7 +326,12 @@
           "primary": true
         }
       ],
-      "location": "St. Paul",
+     "location": [
+      {
+        "city": "St. Paul",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Jake is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -292,13 +352,19 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+     "location": [
+      {
+        "city": "Brooklyn Park",
+        "state": "MN"
+      }
+    ],
       "trainer": true,
       "bio": "Allison is a trained Nutritionist.",
       "photo": "img.jpg",
       "waiverSigned": true,
       "goal/mission": "This is my goal and mission"
     },
+
     {
       "id": 14,
       "firstName": "Clark",
@@ -313,7 +379,12 @@
           "primary": true
         }
       ],
-      "location": "St. Louis Park",
+     "location": [
+      {
+        "city": "St. Louis Park",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Clark is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA) and Nutritionist",
       "photo": "img.jpg",
@@ -334,7 +405,12 @@
           "primary": true
         }
       ],
-      "location": "St. Louis Park",
+      "location": [
+      {
+        "city": "St. Louis Park",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Taylor is a professional cyclist and a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -355,7 +431,12 @@
           "primary": true
         }
       ],
-      "location": "St. Paul",
+      "location": [
+      {
+        "city": "Maplewood",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Matt is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -376,7 +457,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "Champlin",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Chris is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -397,7 +483,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "Minneapolis",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Jackie is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -418,7 +509,12 @@
           "primary": true
         }
       ],
-      "location": "St. Paul",
+     "location": [
+      {
+        "city": "St. Paul",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Luke is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -439,7 +535,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+      "location": [
+      {
+        "city": "Minneapolisl",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Kimber is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -460,7 +561,12 @@
           "primary": true
         }
       ],
-      "location": "Richfield",
+      "location": [
+      {
+        "city": "Richfield",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Julia is a professional skier and Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -481,7 +587,12 @@
           "primary": true
         }
       ],
-      "location": "Minneapolis",
+       "location": [
+      {
+        "city": "Maplewood",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Allen is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
@@ -502,7 +613,12 @@
           "primary": true
         }
       ],
-      "location": "Bloomington",
+        "location": [
+      {
+        "city": "Bloomington",
+        "state": "MN"
+      }
+],
       "trainer": true,
       "bio": "Ben is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
       "photo": "img.jpg",
