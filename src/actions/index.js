@@ -64,7 +64,6 @@ export function apiGetChats(){
     //get from device async storage and not api
 
     return dispatch => {
-        console.log(dispatch)
         return AsyncStorage.getAllKeys((err, keys) => {
             AsyncStorage.multiGet(keys, (err, stores) => {
                 let chats = [];

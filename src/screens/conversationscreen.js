@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
         marginTop:13
     }
 });
-const username = 'ponty96';
+const username = 'DefaultUser';
 
 function mapStateToProps(state) {
     return {
@@ -132,10 +132,12 @@ class ConversationScreen extends Component {
       const  { dispatch } = this.props;
       dispatch(apiGetChats())
       receiveMessage(dispatch)
+      console.log(dispatch)
     }
     componentWillReceiveProps(nextProps) {
         const {dispatch, Chats} = nextProps;
         const chats = Chats.chats;
+        console.log(chats)
         chats.sort((a,b)=>{
                 return moment(a.sent_at).valueOf() - moment(b.sent_at).valueOf();
             });
