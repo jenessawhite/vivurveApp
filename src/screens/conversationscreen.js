@@ -193,7 +193,7 @@ class ConversationScreen extends Component {
             <View style={styles.container}>
                 <View style={styles.row}>
                     <View style={styles.innerRow}>
-                        <Image source={{uri:"../images/avatar1.jpg"}} style={styles.dp}/>
+                        <Image source={require('../images/avatar1.jpg')} style={styles.dp}/>
                         <Text style={styles.main_text}>CHAT WITH A TRAINER</Text>
                     </View>
                 </View>

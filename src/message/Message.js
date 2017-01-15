@@ -10,7 +10,8 @@ let styles = {}
 class Message extends Component {
   render () {
     return (
-      <ScrollView style={{backgroundColor: 'white'}}
+      <ScrollView
+      style={{backgroundColor: 'white'}}
       enableEmptySections={true}>
         <View style={styles.headingContainer}>
           <Icon color='white' name='message' size={62} />
