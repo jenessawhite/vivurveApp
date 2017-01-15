@@ -52,6 +52,7 @@ export function apiSendChat(sender,message){
     const sent_at = moment().format();
     const chat = {sender:sender,message:message, sent_at:sent_at};
     return dispatch => {
+      console.log("message sent")
         return axios.get(`http://localhost:5000/chat/${JSON.stringify(chat)}`).then(response =>{
         }).catch(err =>{
             console.log("error", err);
@@ -61,7 +62,6 @@ export function apiSendChat(sender,message){
 
 export function apiGetChats(){
     //get from device async storage and not api
-
     return dispatch => {
         return AsyncStorage.getAllKeys((err, keys) => {
             AsyncStorage.multiGet(keys, (err, stores) => {
@@ -70,6 +70,7 @@ export function apiGetChats(){
                     // get at each store's key/value so you can work with it
                     chats.push(JSON.parse(store[i][1]))
                 });
+                console.log(chats)
                 dispatch(getChats(chats))
             });
         });
