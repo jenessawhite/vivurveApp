@@ -9,5 +9,5 @@ function mapDispatchToProps (dispatch) {
   return {}
 }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(AboutNav)
+// export default connect(mapStateToProps, mapDispatchToProps)(FeedNav)
 export default TProfileNav

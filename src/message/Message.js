@@ -10,13 +10,13 @@ import {
 
 let styles = {}
 
-class Contact extends Component {
+class Message extends Component {
   render () {
     return (
       <ScrollView style={{backgroundColor: 'white'}}>
         <View style={styles.headingContainer}>
-          <Icon color='white' name='games' size={62} />
-          <Text style={styles.heading}>Hey Jenessa</Text>
+          <Icon color='white' name='message' size={62} />
+          <Text style={styles.heading}>Messages</Text>
         </View>
         <View style={styles.container}>
           <PricingCard
@@ -64,4 +64,4 @@ styles = StyleSheet.create({
   }
 })
 
-export default Contact
+export default Message
