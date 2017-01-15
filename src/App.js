@@ -9,6 +9,7 @@ import About from './about/AboutRootContainer'
 import Contact from './contact/ContactRootContainer'
 import Pricing from './pricing/PricingRootContainer'
 import More from './more/MoreRootContainer'
+import PusherChatApp from './PusherChat'
 
 import { Tabs, Tab } from 'react-native-elements'
 
@@ -32,6 +33,7 @@ class App extends Component {
     const { selectedTab } = this.state
     return (
       <Tabs hidesTabTouch>
+
         <Tab
           titleStyle={[styles.titleStyle]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 7}]}
@@ -42,6 +44,7 @@ class App extends Component {
           onPress={() => this.changeTab('home')}>
           <Home toggleSideMenu={toggleSideMenu} />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'about' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -53,6 +56,7 @@ class App extends Component {
           onPress={() => this.changeTab('about')}>
           <About />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'contact' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -64,6 +68,7 @@ class App extends Component {
           onPress={() => this.changeTab('contact')}>
           <Contact />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'pricing' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -75,6 +80,7 @@ class App extends Component {
           onPress={() => this.changeTab('pricing')}>
           <Pricing />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'more' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -86,6 +92,9 @@ class App extends Component {
           onPress={() => this.changeTab('more')}>
           <More />
         </Tab>
+
+
+
       </Tabs>
 
     )
@@ -96,7 +105,7 @@ styles = StyleSheet.create({
   titleStyle: {
     ...Platform.select({
       ios: {
-        fontFamily: fonts.ios.black
+        // fontFamily: fonts.ios.black
       }
     })
   }

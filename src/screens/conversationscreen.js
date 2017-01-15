@@ -1,10 +1,11 @@
-import React, { Component, View, Text, StyleSheet, Image, ListView, TextInput, Dimensions} from 'react-native';
-import Button from './../components/button/button';
+import React, { Component } from 'react';
+import { View, Text, StyleSheet, Image, ListView, TextInput, Dimensions } from 'react-native';
+// import Button from '../components/button/button';
 import { Actions } from 'react-native-router-flux';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 import { connect } from 'react-redux';
 import moment from 'moment';
-import { apiSendChat, newMesage } from './../actions/';
+import { apiSendChat, newMesage } from '../actions/';
 
 const { width, height } = Dimensions.get('window');
 
@@ -192,7 +193,6 @@ class ConversationScreen extends Component {
                     <Button
                         style={styles.back_btn}
                         onPress={() => Actions.pop()}>
-                        <Image source={require('./../assets/back_chevron.png')} style={styles.back_img}/>
                     </Button>
                     <View style={styles.innerRow}>
                         <Image source={{uri:"https://avatars3.githubusercontent.com/u/11190968?v=3&s=460"}} style={styles.dp}/>
@@ -216,7 +216,6 @@ class ConversationScreen extends Component {
                         placeholder="Type a message"/>
                     <Button
                         onPress={this.sendMessage}>
-                        <Image source={require('./../assets/phone.png')} style={styles.msgAction}/>
                     </Button>
                 </View>
                 <KeyboardSpacer/>

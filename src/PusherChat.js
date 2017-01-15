@@ -1,10 +1,11 @@
-import React, { Component, StyleSheet, Dimensions} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Dimensions} from 'react-native';
 import { Provider } from 'react-redux'
 import configureStore from './store/configureStore'
 
 const store = configureStore();
 
-import ConversationScreen from './screens/conversation-screen';
+import ConversationScreen from './screens/conversationscreen';
 
 const styles = StyleSheet.create({
     container: {

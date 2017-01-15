@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { SEND_CHAT, GET_ALL_CHATS, RECEIVE_MESSAGE} from './../actions'
+import { SEND_CHAT, GET_ALL_CHATS, RECEIVE_MESSAGE} from '../actions'
 
 // THE REDUCER
 
@@ -12,7 +12,7 @@ const Chats = (state = {chats:[]}, actions) => {
             });
 
         case SEND_CHAT:
-        case NEW_MESSAGE:
+        case RECEIVE_MESSAGE:
             return Object.assign({}, state, {
                 process_status:"completed",
                 chats:[...state.chats,actions.payload]
