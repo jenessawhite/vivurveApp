@@ -5,10 +5,7 @@ import socialColors from 'HSSocialColors'
 import fonts from 'HSFonts'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-import {
-  Text,
-  Button
-} from 'react-native-elements'
+import {   Text,   Button,   SearchBar,   List,   ListItem,   Card } from 'react-native-elements'
 
 let styles = {}
 
@@ -16,122 +13,35 @@ const log = () => {
   console.log('hello!')
 }
 
+const list = [   {     name: 'Amy Farha',     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',     subtitle: 'Vice President'   },   {     name: 'Chris Jackson',     avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',     subtitle: 'Vice Chairman'   } ]
+
 class Home extends Component {
+
+  constructor(props) {
+    super(props);
+  }
   render () {
     return (
-      <ScrollView style={{backgroundColor: 'black'}}>
-        <View style={styles.hero}>
-          <Icon color='white' name='directions-run' size={62} />
-          <Text style={styles.heading}>ViVurve</Text>
-        </View>
-        <Button
-          backgroundColor={socialColors.facebook}
-          onPress={() => log('test')}
-          title='ViVurve'
-          buttonStyle={styles.button} />
-        <Button
-          buttonStyle={styles.button}
-          iconRight
-          backgroundColor={socialColors.quora}
-          icon={{name: 'invert-colors'}}
-          onPress={() => log()}
-          title='BUTTON WITH RIGHT ICON'/>
-        <Button
-          buttonStyle={styles.button}
-          iconRight
-          backgroundColor={socialColors.tumblr}
-          icon={{name: 'motorcycle'}}
-          onPress={() => log()}
-          title='BUTTON WITH RIGHT ICON'/>
-        <Button
-          buttonStyle={styles.button}
-          raised
-          backgroundColor={socialColors.foursquare}
-          icon={{name: 'card-travel'}}
-          onPress={() => log()}
-          title='BUTTON RAISED'/>
-        <Button
-          buttonStyle={styles.button}
-          raised
-          backgroundColor={socialColors.vimeo}
-          icon={{name: 'touch-app'}}
-          onPress={() => log()}
-          title='BUTTON RAISED'/>
-        <Button
-          buttonStyle={styles.button}
-          raised
-          backgroundColor={socialColors.twitter}
-          icon={{name: 'new-releases'}}
-          onPress={() => log()}
-          title='BUTTON RAISED'/>
-        <Button
-          buttonStyle={styles.button}
-          raised
-          backgroundColor={socialColors.linkedin}
-          icon={{name: 'business'}}
-          onPress={() => log()}
-          title='BUTTON RAISED'/>
-        <Button
-          buttonStyle={styles.button}
-          raised
-          backgroundColor={socialColors.pinterest}
-          icon={{name: 'send'}}
-          onPress={() => log()}
-          title='BUTTON RAISED'/>
-        <Button
-          buttonStyle={styles.button}
-          raised
-          onPress={() => log()}
-          title='BUTTON RAISED'/>
+      <ScrollView style={{backgroundColor: 'white', marginTop: 60, marginBottom: 0}}>
+      <View>
+        <SearchBar lightTheme placeholder='Enter a trainer name, location, or specialty' />
+      </View>
+      <Text style={styles.fonts} h4> Recommended Trainers </Text>
 
-        <Button
-          large={true}
-          buttonStyle={styles.button}
-          onPress={() => log()}
-          backgroundColor={socialColors.facebook}
-          title='LARGE BUTTON' />
-        <Button
-          large={true}
-          buttonStyle={styles.button}
-          backgroundColor={socialColors.stumbleupon}
-          icon={{name: 'cached'}}
-          title='LARGE BUTTON WITH ICON' />
-        <Button
-          large={true}
-          buttonStyle={styles.button}
-          backgroundColor={socialColors.quora}
-          raised
-          icon={{name: 'album'}}
-          title='LARGE RAISED WITH ICON' />
-        <Button
-          large={true}
-          buttonStyle={styles.button}
-          raised
-          iconRight
-          backgroundColor={socialColors.tumblr}
-          icon={{name: 'accessibility'}}
-          title='LARGE RAISED RIGHT ICON' />
-        <Button
-          large={true}
-          buttonStyle={styles.button}
-          raised
-          iconRight
-          backgroundColor={socialColors.foursquare}
-          icon={{name: 'account-balance'}}
-          title='LARGE RAISED RIGHT ICON' />
-        <Button
-          large={true}
-          buttonStyle={styles.button}
-          raised
-          backgroundColor={socialColors.vimeo}
-          icon={{name: 'change-history'}}
-          title='LARGE RAISED WITH ICON' />
-        <Button
-          large={true}
-          buttonStyle={[{marginBottom: 15, marginTop: 15}]}
-          icon={{name: 'code'}}
-          backgroundColor={socialColors.twitter}
-          title='LARGE ANOTHER BUTTON' />
+      <List containerStyle={{marginBottom: 20}}>
+        {
+          list.map((l, i) => (
+            <View key={i}>
+                <ListItem
+                roundAvatar
+                avatar={{uri:l.avatar_url}}
+                title={l.name}
+                rightIcon={{name:'check-circle'}}
+                />
+            </View>
+          ))
+        }
+      </List>
       </ScrollView>
     )
   }
