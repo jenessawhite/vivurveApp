@@ -10,6 +10,7 @@ import Message from './message/MessageRootContainer'
 import Schedule from './Schedule/ScheduleRootContainer'
 import Profile from './profile/ProfileRootContainer'
 import TProfileNav from './trainerprofile/TProfileRootContainer'
+import PusherChatApp from './PusherChat'
 
 import { Tabs, Tab, Icon } from 'react-native-elements'
 
@@ -31,6 +32,7 @@ class App extends Component {
   render () {
     const { selectedTab } = this.state
     return (
+
       <Tabs hidesTabTouch
         tabBarStyle={[{backgroundColor: '#5cccf4'}]}>
         <Tab
@@ -43,6 +45,7 @@ class App extends Component {
           onPress={() => this.changeTab('home')}>
           <Home />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'feed' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -54,6 +57,7 @@ class App extends Component {
           onPress={() => this.changeTab('feed')}>
           <Feed />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'message' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -66,6 +70,7 @@ class App extends Component {
           onPress={() => this.changeTab('message')}>
           <Message />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'Schedule' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -77,6 +82,7 @@ class App extends Component {
           onPress={() => this.changeTab('Schedule')}>
           <Schedule />
         </Tab>
+
         <Tab
           tabStyle={selectedTab !== 'profile' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
@@ -108,7 +114,7 @@ styles = StyleSheet.create({
     color: colors.fontPrimary,
     ...Platform.select({
       ios: {
-        fontFamily: fonts.ios.black
+        // fontFamily: fonts.ios.black
       }
     })
   }
