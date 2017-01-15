@@ -45,7 +45,8 @@ class AppRootContainer extends Component {
     ]
     const MenuComponent = (
       <View style={{flex: 1, backgroundColor: '#ededed', paddingTop: 50}}>
-        <List containerStyle={{marginBottom: 20}}>
+        <List containerStyle={{marginBottom: 20}}
+        enableEmptySections={true}>
         {
           list.map((l, i) => (
             <ListItem

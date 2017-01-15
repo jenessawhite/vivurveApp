@@ -193,12 +193,13 @@ class ConversationScreen extends Component {
             <View style={styles.container}>
                 <View style={styles.row}>
                     <View style={styles.innerRow}>
-                        <Image source={{uri:"https://avatars3.githubusercontent.com/u/11190968?v=3&s=460"}} style={styles.dp}/>
-                        <Text style={styles.main_text}>GROUP CHAT</Text>
+                        <Image source={{uri:"../images/avatar1.jpg"}} style={styles.dp}/>
+                        <Text style={styles.main_text}>CHAT WITH A TRAINER</Text>
                     </View>
                 </View>
 
                 <ListView
+                    enableEmptySections={true}
                     renderRow={this.renderRow}
                     dataSource={this.state.conversation}/>
 
