@@ -9,7 +9,7 @@ import Feed from './feed/FeedRootContainer'
 import Message from './message/MessageRootContainer'
 import Schedule from './Schedule/ScheduleRootContainer'
 import Profile from './profile/ProfileRootContainer'
-import TProfileNav from './trainerprofile/TProfileRootContainer'
+import TProfile from './trainerprofile/TProfileRootContainer'
 import PusherChatApp from './PusherChat'
 
 import { Tabs, Tab, Icon } from 'react-native-elements'

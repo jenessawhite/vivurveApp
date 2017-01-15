@@ -41,38 +41,30 @@ class Profile extends Component {
              </View>
         </Col>
         <Col style={{marginTop: 20}}>
-           <Text style={styles.heading}>Firstname Lastname</Text>
-           <Text>Minneapolis, MN</Text>
-           <Text>My fitness goal is</Text>
-           <Text>Weight training, strength training, conditioning</Text>
+           <Text style={styles.heading}>Steve Jones</Text>
+              <Text style={styles.location}><Icon name='location-on' />Minneapolis, MN</Text>
+              <Text>My fitness goal is: strength training</Text>
          </Col>
       </Grid>
 
-        <Card title='My Fitness Goal is...'>
-          <Text style={{marginBottom: 10}}>
-            I want to be able to do a pull up
-          </Text>
-        </Card>
+        <Text style={styles.subheading}>
+         Experience Level: Beginner
+        </Text>
 
-        <Card title='Activities'>
-          <Text>
-            Boxing - beginner
-          </Text>
-        </Card>
+        <Text style={styles.subheading}>
+         Bio:
+        </Text>
+        <Text style={styles.body}>
+        Hi! I'm Steve and I'm new to the Minneapolis area.  I'm hoping to find a personal trainer who can help me with general strength training.  I have never had a fitness plan.
+         </Text>
 
-        <Card title='Bio'>
-          <Text style={{marginBottom: 10}}>
-            Info about me
+         <Text style={styles.subheading}>
+                  Activities:
+         </Text>
+         <Text style={styles.body}>
+         Lifting, nutrition
           </Text>
-        </Card>
 
-        <Card>
-         <Button
-            icon={{name: 'mode-edit'}}
-            backgroundColor='#03A9F4'
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-            title='Edit' />
-        </Card>
       </ScrollView>
     )
   }
@@ -86,9 +78,18 @@ styles = StyleSheet.create({
     marginTop: 60
   },
   heading: {
-    color: 'black',
+    color: '#3d3d3d',
     marginTop: 10,
-    fontSize: 22
+    fontSize: 30
+  },
+  subheading: {
+      color: '#3d3d3d',
+      padding: 10,
+      fontSize: 16,
+      fontWeight: 'bold'
+    },
+  location: {
+      padding: 10
   },
   hero: {
     justifyContent: 'center',
@@ -96,10 +97,22 @@ styles = StyleSheet.create({
     padding: 40,
     backgroundColor: 'white'
   },
-  avatar: {
-      borderRadius: 50,
-      height: 100,
+    ratingImage: {
+      height: 19.21,
       width: 100
+    },
+    body: {
+        marginLeft: 15
+    },
+    activePlace: {
+      marginLeft: 20,
+      color: '#5cccf4',
+      fontWeight: 'bold'
+    },
+  avatar: {
+      borderRadius: 60,
+      height: 120,
+      width: 120
   }
 })
 
