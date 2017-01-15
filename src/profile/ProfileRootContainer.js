@@ -1,4 +1,4 @@
-import PricingNav from './PricingNav'
+import ProfileNav from './ProfileNav'
 import { connect } from 'react-redux'
 
 function mapStateToProps (state) {
@@ -9,5 +9,5 @@ function mapDispatchToProps (dispatch) {
   return {}
 }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(AboutNav)
-export default PricingNav
+// export default connect(mapStateToProps, mapDispatchToProps)(HomeNav)
+export default ProfileNav

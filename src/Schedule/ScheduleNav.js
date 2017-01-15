@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Navigator } from 'react-native'
-import Home from './Home'
+import Schedule from './Schedule'
 import navigationBar from 'HSNavBar'
 
-const initialRoute = {component: Home, name: 'home'}
+const initialRoute = {component: Schedule}
 
-class HomeNav extends Component {
+class ScheduleNav extends Component {
   constructor () {
     super()
     this.renderScene = this.renderScene.bind(this)
@@ -25,4 +25,4 @@ class HomeNav extends Component {
   }
 }
 
-export default HomeNav
+export default ScheduleNav

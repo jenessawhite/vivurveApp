@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import { StyleSheet, Platform } from 'react-native'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+// import Icon from 'react-native-vector-icons/MaterialIcons'
 import colors from 'HSColors'
 import fonts from 'HSFonts'
 
 import Home from './home/HomeNav'
-import About from './about/AboutRootContainer'
-import Contact from './contact/ContactRootContainer'
-import Pricing from './pricing/PricingRootContainer'
-import More from './more/MoreRootContainer'
+import Feed from './feed/FeedRootContainer'
+import Message from './message/MessageRootContainer'
+import Schedule from './Schedule/ScheduleRootContainer'
+import Profile from './profile/ProfileRootContainer'
+import TProfileNav from './trainerprofile/TProfileRootContainer'
 import PusherChatApp from './PusherChat'
 
-import { Tabs, Tab } from 'react-native-elements'
+import { Tabs, Tab, Icon } from 'react-native-elements'
 
 let styles = {}
 
@@ -29,71 +30,70 @@ class App extends Component {
     })
   }
   render () {
-    const { toggleSideMenu } = this.props
     const { selectedTab } = this.state
     return (
-      <Tabs hidesTabTouch>
 
+      <Tabs hidesTabTouch
+        tabBarStyle={[{backgroundColor: '#5cccf4'}]}>
         <Tab
           titleStyle={[styles.titleStyle]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 7}]}
           selected={selectedTab === 'home'}
           title={selectedTab === 'home' ? 'HOME' : null}
-          renderIcon={() => <Icon color={colors.grey2} name='whatshot' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary} name='whatshot' size={26} />}
+          renderIcon={() => <Icon color={colors.white} name='home' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.secondary} name='home' size={26} />}
           onPress={() => this.changeTab('home')}>
-          <Home toggleSideMenu={toggleSideMenu} />
+          <Home />
         </Tab>
 
         <Tab
-          tabStyle={selectedTab !== 'about' && { marginBottom: -6 }}
+          tabStyle={selectedTab !== 'feed' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 7}]}
-          selected={selectedTab === 'about'}
-          title={selectedTab === 'about' ? 'ABOUT' : null}
-          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='important-devices' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary} name='important-devices' size={26} />}
-          onPress={() => this.changeTab('about')}>
-          <About />
+          selected={selectedTab === 'feed'}
+          title={selectedTab === 'feed' ? 'FEED' : null}
+          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.white} type='octicon' name='globe' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.secondary} type='octicon' name='globe' size={26} />}
+          onPress={() => this.changeTab('feed')}>
+          <Feed />
         </Tab>
 
         <Tab
-          tabStyle={selectedTab !== 'contact' && { marginBottom: -6 }}
+          tabStyle={selectedTab !== 'message' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 7}]}
-          selected={selectedTab === 'contact'}
-          title={selectedTab === 'contact' ? 'CONTACT' : null}
-          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='contacts' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary} name='contacts' size={26} />}
-          onPress={() => this.changeTab('contact')}>
-          <Contact />
+          containerStyle={[{backgroundColor: 'white'}, {borderRadius: 100}]}
+          selected={selectedTab === 'message'}
+          title={selectedTab === 'message' ? 'MESSAGE' : null}
+          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.white} name='message' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.secondary} name='message' size={26} />}
+          onPress={() => this.changeTab('message')}>
+          <Message />
         </Tab>
 
         <Tab
-          tabStyle={selectedTab !== 'pricing' && { marginBottom: -6 }}
+          tabStyle={selectedTab !== 'Schedule' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 7}]}
-          selected={selectedTab === 'pricing'}
-          title={selectedTab === 'pricing' ? 'PRICING' : null}
-          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='attach-money' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary} name='attach-money' size={26} />}
-          onPress={() => this.changeTab('pricing')}>
-          <Pricing />
+          selected={selectedTab === 'Schedule'}
+          title={selectedTab === 'Schedule' ? 'SCHEDULE' : null}
+          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.white} name='today' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.secondary} name='today' size={26} />}
+          onPress={() => this.changeTab('Schedule')}>
+          <Schedule />
         </Tab>
 
         <Tab
-          tabStyle={selectedTab !== 'more' && { marginBottom: -6 }}
+          tabStyle={selectedTab !== 'profile' && { marginBottom: -6 }}
           titleStyle={[styles.titleStyle, {marginTop: -1}]}
           selectedTitleStyle={[styles.titleSelected, {marginTop: -3, marginBottom: 8}]}
-          selected={selectedTab === 'more'}
-          title={selectedTab === 'more' ? 'MORE' : null}
-          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.grey2} name='list' size={26} />}
-          renderSelectedIcon={() => <Icon color={colors.primary} name='list' size={26} />}
-          onPress={() => this.changeTab('more')}>
-          <More />
+          selected={selectedTab === 'profile'}
+          title={selectedTab === 'profile' ? 'PROFILE' : null}
+          renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.white} name='account-circle' size={26} />}
+          renderSelectedIcon={() => <Icon color={colors.secondary} name='account-circle' size={26} />}
+          onPress={() => this.changeTab('profile')}>
+          <Profile />
         </Tab>
-
-
 
       </Tabs>
 
@@ -103,6 +103,15 @@ class App extends Component {
 
 styles = StyleSheet.create({
   titleStyle: {
+    color: colors.fontPrimary,
+    ...Platform.select({
+      ios: {
+        fontFamily: fonts.ios.black
+      }
+    })
+  },
+  titleSelected: {
+    color: colors.fontPrimary,
     ...Platform.select({
       ios: {
         // fontFamily: fonts.ios.black
