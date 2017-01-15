@@ -7,6 +7,7 @@ export const SEND_CHAT = "SEND_CHAT";
 export const GET_ALL_CHATS = "GET_ALL_CHATS";
 export const RECEIVE_MESSAGE = " RECEIVE_MESSAGE";
 
+
 const sendChat = (payload) => {
     return {
         type: SEND_CHAT,
@@ -36,7 +37,7 @@ const addToStorage = (data) => {
 
 // function that listens to pusher for new messages and dispatches a new
 // message action
-export function newMesage(dispatch){
+export function receiveMessage(dispatch){
     const socket = new Pusher("3c01f41582a45afcd689");
     const channel = socket.subscribe('chat_channel');
     channel.bind('new-message',
@@ -51,7 +52,7 @@ export function apiSendChat(sender,message){
     const sent_at = moment().format();
     const chat = {sender:sender,message:message, sent_at:sent_at};
     return dispatch => {
-        return  axios.get(`http://localhost:5000/chat/${JSON.stringify(chat)}`).then(response =>{
+        return axios.get(`http://localhost:5000/chat/${JSON.stringify(chat)}`).then(response =>{
         }).catch(err =>{
             console.log("error", err);
         });
@@ -62,7 +63,6 @@ export function apiGetChats(){
     //get from device async storage and not api
 
     return dispatch => {
-        dispatch(isFetching());
         return AsyncStorage.getAllKeys((err, keys) => {
             AsyncStorage.multiGet(keys, (err, stores) => {
                 let chats = [];
