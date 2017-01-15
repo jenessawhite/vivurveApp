@@ -1,0 +1,44 @@
+{
+  "trainerList": [{
+    "id": 0,
+    "firstName": "Abc",
+    "lastName": "Defg",
+    "email": "noreply@fake.com",
+    "phone": "123-456-7890",
+    "trainingAreas": [
+      {
+        "area": "Weight Lifting",
+        "certification": true,
+        "certificationDetail": "ASM",
+        "primary": true
+      }
+    ],
+    "location": "Minneapolis",
+    "trainer": true,
+    "bio": "Bio words here",
+    "photo": "img.jpg",
+    "waiverSigned": true,
+    "goal/mission": "This is my goal and mission"
+  },
+    {
+      "id": 1,
+      "firstName": "Abc",
+      "lastName": "Defg",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Weight Lifting",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Bio words here",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    }]
+}
