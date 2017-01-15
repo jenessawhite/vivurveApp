@@ -1,0 +1,506 @@
+{
+  "trainerList": [{
+    "id": 0,
+    "firstName": "Janice",
+    "lastName": "Smith",
+    "email": "noreply@fake.com",
+    "phone": "123-456-7890",
+    "trainingAreas": [
+      {
+        "area": "Weight Lifting",
+        "certification": true,
+        "certificationDetail": "ASM",
+        "primary": true
+      }
+    ],
+    "location": "Minneapolis",
+    "trainer": true,
+    "bio": "Janice is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+    "photo": "img.jpg",
+    "waiverSigned": true,
+    "goal/mission": "This is my goal and mission"
+  },
+    {
+      "id": 1,
+      "firstName": "Mark",
+      "lastName": "Walker",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Dance Instructor",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Bio words here",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 2,
+      "firstName": "Mary",
+      "lastName": "Johnson",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "General Fitness",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Mary is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 3,
+      "firstName": "Sarah",
+      "lastName": "Lanson",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Cross Fit",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Sarah is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 4,
+      "firstName": "Ryan",
+      "lastName": "Anderson",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Weight Lifting",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Janice is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 5,
+      "firstName": "Chris",
+      "lastName": "Wyatt",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Cross Fit",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Chris is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 6,
+      "firstName": "Jill",
+      "lastName": "Obrian",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Yoga",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Jill is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 7,
+      "firstName": "Karren",
+      "lastName": "Hunter",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Yoga",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Bloomington",
+      "trainer": true,
+      "bio": "Karren is a Yoga professional Certified through CorePowers training center",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 8,
+      "firstName": "Nancy",
+      "lastName": "Smith",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Yoga",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Nancy is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 9,
+      "firstName": "Nicole",
+      "lastName": "Torin",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Cross Fit",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Richfield",
+      "trainer": true,
+      "bio": "Nicole is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 10,
+      "firstName": "Mike",
+      "lastName": "Jones",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Basketball",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "St. Paul",
+      "trainer": true,
+      "bio": "Mike is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 11,
+      "firstName": "Stephaine",
+      "lastName": "Williams",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "General Fitness",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Stephanie is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 12,
+      "firstName": "Jake",
+      "lastName": "Jones",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Weight Lifting",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "St. Paul",
+      "trainer": true,
+      "bio": "Jake is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 13,
+      "firstName": "Allison",
+      "lastName": "Davis",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Nutrition",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Allison is a trained Nutritionist.",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 14,
+      "firstName": "Clark",
+      "lastName": "Moore",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Nutrition",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "St. Louis Park",
+      "trainer": true,
+      "bio": "Clark is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA) and Nutritionist",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 15,
+      "firstName": "Taylor",
+      "lastName": "White",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Biking",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "St. Louis Park",
+      "trainer": true,
+      "bio": "Taylor is a professional cyclist and a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 16,
+      "firstName": "Matt",
+      "lastName": "Johnson",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Biking",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "St. Paul",
+      "trainer": true,
+      "bio": "Matt is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 17,
+      "firstName": "Chris",
+      "lastName": "Jackson",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Weight Lifting",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Chris is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 18,
+      "firstName": "Jackie",
+      "lastName": "Anderson",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Weight Lifting",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Jackie is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 19,
+      "firstName": "Luke",
+      "lastName": "Lewis",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "General Fitness",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "St. Paul",
+      "trainer": true,
+      "bio": "Luke is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 20,
+      "firstName": "Kimber",
+      "lastName": "Lee",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Yoga",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Kimber is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 21,
+      "firstName": "Julia",
+      "lastName": "Harrison",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Skiing",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Richfield",
+      "trainer": true,
+      "bio": "Julia is a professional skier and Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 22,
+      "firstName": "Allen",
+      "lastName": "Young",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Nutrition",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Minneapolis",
+      "trainer": true,
+      "bio": "Allen is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    },
+    {
+      "id": 23,
+      "firstName": "Ben",
+      "lastName": "Adams",
+      "email": "noreply@fake.com",
+      "phone": "123-456-7890",
+      "trainingAreas": [
+        {
+          "area": "Cross Fit",
+          "certification": true,
+          "certificationDetail": "ASM",
+          "primary": true
+        }
+      ],
+      "location": "Bloomington",
+      "trainer": true,
+      "bio": "Ben is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
+      "photo": "img.jpg",
+      "waiverSigned": true,
+      "goal/mission": "This is my goal and mission"
+    }]
+}
