@@ -6,6 +6,7 @@ import Hyperlink from 'react-native-hyperlink'
 import data from '../data/hello.json'
 
 import {
+  Button,
   Text,
   Card,
   Icon,
@@ -32,24 +33,27 @@ class Feed extends Component {
   render () {
     const { selectedIndex } = this.state
     return (
-      <ScrollView style={{backgroundColor: 'white'}}>
-        <View style={styles.headerContainer}>
-          <Icon color='white' name='invert-colors' size={62} />
-          <Text style={styles.heading}>Feed</Text>
-        </View>
+      <ScrollView style={styles.heading}>
         <View style={styles.container}>
             {
               articles.map((article, index) => {
                 return (
                   <Card containerStyle={{marginTop: 15}} key={index}>
                     <Image
-                      style={{width: 120, height: 120}}
+                      style={{width: 120, height: 120, alignSelf: 'center'}}
                       resizeMode='cover'
                       source={{uri: article.imageUrl}} />
-                    <View key={index} style={styles.user}>
-                      <Text style={styles.headline}>{article.headline}</Text>
-                      <Text style={styles.name}>By: {article.author}</Text>
-                    </View>
+                      <Text style={styles.headline, {marginBottom: 10}}>{article.headline}</Text>
+                      <Text>By: {article.author}</Text>
+                      <Text style={{marginBottom: 10}}>Published: {article.date}</Text>
+                        <Button
+                          iconRight
+                          raised
+                          icon={{name: 'forward', color: colors.fontPrimary}}
+                          backgroundColor= {colors.secondary}
+                          color={colors.fontPrimary}
+                          title='Read Article'
+                          onPress={ url => alert(url) }/>
                   </Card>
                 )
               })
@@ -72,9 +76,8 @@ styles = StyleSheet.create({
     backgroundColor: colors.secondary
   },
   heading: {
-    color: 'white',
-    marginTop: 10,
-    fontSize: 22
+    backgroundColor: 'white',
+    marginTop: 60,
   },
   fonts: {
     marginBottom: 8

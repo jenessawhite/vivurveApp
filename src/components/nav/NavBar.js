@@ -12,7 +12,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 let styles = {}
 
 const NavigationBar = () => {
-  const src = require('../../images/logo.png')
+  const src = require('../../images/logoNoTag.png')
   const LeftButton = () => {
     return null
   }
@@ -40,9 +40,13 @@ const NavigationBar = () => {
 }
 
 styles = StyleSheet.create({
+  logo: {
+    height: 65,
+    marginTop:10
+  },
   navBar: {
     height: 65,
-    backgroundColor: colors.grey1,
+    backgroundColor: "#5cccf4",
     ...Platform.select({
       android: {
         height: 55

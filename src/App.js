@@ -9,7 +9,7 @@ import Feed from './feed/FeedRootContainer'
 import Message from './message/MessageRootContainer'
 import Schedule from './Schedule/ScheduleRootContainer'
 import Profile from './profile/ProfileRootContainer'
-import TProfileNav from './trainerprofile/TProfileRootContainer'
+import TProfile from './trainerprofile/TProfileRootContainer'
 import PusherChatApp from './PusherChat'
 
 import { Tabs, Tab, Icon } from 'react-native-elements'
@@ -20,7 +20,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      selectedTab: 'home'
+      selectedTab: 'feed'
     }
     this.changeTab = this.changeTab.bind(this)
   }
@@ -92,9 +92,8 @@ class App extends Component {
           renderIcon={() => <Icon style={{paddingBottom: 4}} color={colors.white} name='account-circle' size={26} />}
           renderSelectedIcon={() => <Icon color={colors.secondary} name='account-circle' size={26} />}
           onPress={() => this.changeTab('profile')}>
-          <Profile />
+          <TProfile />
         </Tab>
-
       </Tabs>
 
     )

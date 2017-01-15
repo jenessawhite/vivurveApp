@@ -6,6 +6,7 @@
       "url": "http://www.quickanddirtytips.com/health-fitness/exercise/the-5-best-full-body-exercises",
       "imageUrl": "https://static.wixstatic.com/media/b2a60c_f83198bc0fc14572845a61176eb71f3d.jpg",
       "author": "Ben Greenfield",
+     "date": "2017-1-11",
     },
     {
       "id": 1,
@@ -13,6 +14,7 @@
       "url": "https://www.ideafit.com/fitness-library/fit-tech-trends-to-watch-in-2017",
       "imageUrl": "http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/04/07/103529631-GettyImages-162221507.530x298.jpg?v=1460044604",
       "author": "Amanda Vogel",
+    "date": "2016-12-21",
     },
     {
       "id": 2,
@@ -20,6 +22,7 @@
       "url": "http://christianbosse.com/the-holy-grail-of-strength-training-how-many-reps-how-many-sets/",
       "imageUrl": "http://www.ribbonfarm.com/wp-content/uploads/2016/03/The-Holy-Grail-of-Online-Engagement.jpg",
       "author": "Christian Bosse",
+    "date": "2016-12-13",
     },
   {
       "id": 3,
@@ -27,20 +30,31 @@
       "url": "http://www.precisionnutrition.com/ketogenic-diet",
       "imageUrl": "https://cdn2.omidoo.com/sites/default/files/imagecache/full_width/images/bydate/aug_20_2012_-_136pm/shutterstock_48263449.jpg",
       "author": "Krista Scott-Dixon",
-    },
+    "date": "2016-12-01",
+  },
   {
-      "id":5,
+      "id":4,
       "headline": "In Pursuit of Abs - The Good, The Bad, and The Ugly",
       "url": "http://propanefitness.com/in-pursuit-of-abs-the-good-the-bad-and-the-ugly/",
       "imageUrl": "https://s-media-cache-ak0.pinimg.com/564x/b0/7b/74/b07b7470d4bf1458f87126232c039bcc.jpg",
       "author": "Propanefitness",
+    "date": "2016-11-29",
     },
   {
+      "id": 5,
+      "headline": "5 Myths Killing Your Fat Loss Progress",
+      "url": "http://tonygentilcore.com/2016/08/5-myths-killing-your-fat-loss-progress/",
+      "imageUrl": "http://www.tidewaterfitness.org/wp-content/uploads/2016/03/Fat-loss.jpg",
+      "author": "Tony Gentilcore",
+    "date": "2016-11-25",
+    },
+    {
       "id": 6,
       "headline": "5 Myths Killing Your Fat Loss Progress",
       "url": "http://tonygentilcore.com/2016/08/5-myths-killing-your-fat-loss-progress/",
       "imageUrl": "http://www.tidewaterfitness.org/wp-content/uploads/2016/03/Fat-loss.jpg",
       "author": "Tony Gentilcore",
+      "date": "2016-11-25",
     },
   ]
 }
