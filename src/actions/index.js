@@ -62,7 +62,6 @@ export function apiSendChat(sender,message){
 
 export function apiGetChats(){
     //get from device async storage and not api
-
     return dispatch => {
         return AsyncStorage.getAllKeys((err, keys) => {
             AsyncStorage.multiGet(keys, (err, stores) => {

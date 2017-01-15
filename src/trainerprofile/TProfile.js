@@ -68,6 +68,18 @@ class TProfile extends Component {
            Mike is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA).  He received both his BS and MS degrees at The University of Minnesota.
            </Text>
 
+           <Text style={styles.subheading}>
+            Reviews
+           </Text>
+           <Image source={require('../images/rating.png')} style={styles.ratingImage}/>
+           <Text style={styles.body}>
+           Mike is great! He gave me some good tips for working on my abs.
+           </Text>
+           <Image source={require('../images/rating.png')} style={styles.ratingImage}/>
+           <Text style={styles.body}>
+           Mike is professional and encouraging- highly recommend him.
+           </Text>
+
           <Text style={styles.subheading}>
            Availability
           </Text>
