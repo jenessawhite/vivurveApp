@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, ScrollView, Image, ListView } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import colors from 'HSColors'
+
 let styles
 
 import {
@@ -63,7 +65,16 @@ class Profile extends Component {
          </Text>
          <Text style={styles.body}>
          Lifting, nutrition
-          </Text>
+        </Text>
+
+        <Button
+          containerStyle={{marginTop: 50}}
+          raised
+          icon={{name: 'edit', color: colors.fontPrimary}}
+          backgroundColor= {colors.secondary}
+          color={colors.fontPrimary}
+          title='Edit'
+        />
 
       </ScrollView>
     )

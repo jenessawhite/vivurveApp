@@ -6,13 +6,49 @@ import Calendar from 'react-native-calendar'
 
 import {
   Button,
+  List,
+  ListItem,
   Text,
+  Image,
   FormInput,
   FormLabel,
   CheckBox
 } from 'react-native-elements'
 
 let styles = {}
+
+const list = [
+  // {
+  // name: 'Amy Farha',
+  // avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
+  // subtitle: 'Vice President'
+  // },
+  // {
+  //   name: 'Chris Jackson',
+  //   avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
+  //   subtitle: 'Vice Chairman'
+  // },
+  {
+    date:'2017-01-15',
+    trainer: 'Todd',
+    focus: 'Dance - 2017-01-15'
+  },
+  {
+    date:'2017-01-21',
+    trainer: 'Jane',
+    focus: 'Swimming - 2017-01-21'
+  },
+  {
+    date:'2017-02-15',
+    trainer: 'Jane',
+    focus: 'Swimming - 2017-02-15'
+  },
+  {
+    date:'2017-02-21',
+    trainer: 'Todd',
+    focus: 'Dance - 2017-02-21'
+  },
+]
 
 class Schedule extends Component {
   render () {
@@ -36,6 +72,20 @@ class Schedule extends Component {
             weekStart={0} // Day on which week starts 0 - Sunday, 1 - Monday, 2 - Tuesday, etc, Default: 1
           />
         </View>
+        <Text h4> My Upcoming Appointments</Text>
+        <ScrollView>
+          <List containerStyle={{marginBottom: 20}}>
+            {
+              list.map((l, i) => (
+                <ListItem
+                  key={i}
+                  title={l.focus}
+                  subtitle={l.trainer}
+                />
+              ))
+            }
+          </List>
+        </ScrollView>
       </ScrollView>
     )
   }
@@ -74,6 +124,19 @@ const customStyle = {
   }
 
 styles = StyleSheet.create({
+  subtitleView: {
+  flexDirection: 'row',
+  paddingLeft: 10,
+  paddingTop: 5
+},
+ratingImage: {
+  height: 19.21,
+  width: 100
+},
+ratingText: {
+  paddingLeft: 10,
+  color: 'grey'
+},
   headingContainer: {
     marginTop: 60,
     justifyContent: 'center',
@@ -90,6 +153,7 @@ styles = StyleSheet.create({
   },
   calendar: {
     alignSelf: 'center',
+    height: 300,
   }
 })
 
