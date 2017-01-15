@@ -180,7 +180,9 @@ class ConversationScreen extends Component {
     }
 
     sendMessage = (e) => {
+      console.log(e.nativeEvent.key)
       if(e.nativeEvent.key == "Enter"){
+
             const message = this.state.text;
             const username =  this.state.username;
             const {dispatch, Chats} = this.props;
