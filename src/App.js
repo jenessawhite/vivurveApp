@@ -112,6 +112,11 @@ styles = StyleSheet.create({
   },
   titleSelected: {
     color: colors.fontPrimary,
+    ...Platform.select({
+      ios: {
+        fontFamily: fonts.ios.black
+      }
+    })
   }
 })
 

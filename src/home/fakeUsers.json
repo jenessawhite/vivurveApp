@@ -1,5 +1,6 @@
 {
-  "trainerList": [{
+  "trainerList": [
+    {
     "id": 0,
     "firstName": "Janice",
     "lastName": "Smith",
@@ -13,7 +14,12 @@
         "primary": true
       }
     ],
-    "location": "Minneapolis",
+    "location": [
+      {
+        "city": "Minneapolis",
+        "state": "MN"
+      }
+    ],
     "trainer": true,
     "bio": "Janice is a Certified Personal Trainer through the American Fitness Professionals and Associates (AFPA)",
     "photo": "img.jpg",
