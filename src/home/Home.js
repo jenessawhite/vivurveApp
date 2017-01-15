@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, Image, View, StyleSheet, Platform } from 'react-native'
+import { ScrollView, Image, View, StyleSheet, TextInput, Platform } from 'react-native'
 import colors from 'HSColors'
 import socialColors from 'HSSocialColors'
 import fonts from 'HSFonts'
@@ -16,16 +16,43 @@ const log = () => {
   console.log(arrayOfTrainers[2].firstName)
 }
 
+
 class Home extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
+    this.state = {
+      searchValue: '',
+      trainers: arrayOfTrainers
+    }
+  }
+
+  onNewSearch(searchValue) {
+    let trainers;
+    if (searchValue === '') {
+      trainers= arrayOfTrainers
+    } else {
+      trainers = arrayOfTrainers.filter((v,i) => {
+        return
+          v.firstName.toLowerCase().indexOf(searchValue.toLowerCase()) > -1
+          console.log(searchValue);
+      })
+    }
+    this.setState({
+      trainers
+    })
   }
   render () {
     return (
     <View style={{backgroundColor: 'white', marginTop: 70, marginBottom: 0}}>
-      <View>
-        <SearchBar lightTheme placeholder='Enter a trainer name, location, or specialty' />
+      <View style={{marginTop: 70}}>
+        <SearchBar
+          lightTheme
+          placeholder='Enter a trainer name, location, or specialty'
+          onChangeText={this.onNewSearch.bind(this)}
+          autoCorrect={false}
+          value={this.state.searchValue}
+        />
       </View>
       <ScrollView style={{backgroundColor: 'white', marginTop: 10, marginBottom: 0}}>
 
@@ -33,13 +60,13 @@ class Home extends Component {
 
       <List containerStyle={{marginBottom: 20}}>
         {
-          arrayOfTrainers.map((l, i) => (
+          this.state.trainers.map((trainer, i) => (
             <View key={i}>
                 <ListItem
                 roundAvatar
                 avatar={{uri:'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg'}}
-                title={l.firstName + ' ' + l.lastName}
-                subtitle={l.trainingAreas[0].area}
+                title={trainer.firstName + ' ' + trainer.lastName}
+                subtitle={trainer.trainingAreas[0].area}
                 rightIcon={{name:'check-circle'}}
                 />
             </View>
