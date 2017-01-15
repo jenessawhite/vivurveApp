@@ -1,14 +1,13 @@
-![React Native Hackathon Starter & UI Toolkit](http://i.imgur.com/kJA1dU0.png)
-### React Native Starter Project and UI Boilerplate using [React Native Elements](https://github.com/dabit3/React-Native-Elements)
+# ViVurve
 
-![React Native UI Toolkit](http://i.imgur.com/tqxDeoG.png)
+### Project Description
 
-## Get Started
+### Get Started
 
 1 clone Project
 
 ```
-git clone git@github.com:dabit3/react-native-hackathon-starter.git
+git clone https://github.com/vivurve/ViVurve.git
 ```
 
 2 install dependencies
@@ -25,5 +24,13 @@ react-native link
 
 4 run project
 
-The API for React Native Elements is located [here](https://github.com/dabit3/React-Native-Elements).
+```
+react-native run-ios
+```
+OR
+```
+react-native run-android
+```
 
+
+The API for React Native Elements is located [here](https://github.com/dabit3/React-Native-Elements).

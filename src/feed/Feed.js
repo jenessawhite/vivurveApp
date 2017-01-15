@@ -1,47 +1,21 @@
 import React, { Component } from 'react'
 import { ScrollView, View, StyleSheet, Image } from 'react-native'
 import colors from 'HSColors'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+
+import data from '../data/hello.json'
 
 import {
   Text,
   Card,
-  SocialIcon,
+  Icon,
   Divider,
-  ButtonGroup,
   List, ListItem
 } from 'react-native-elements'
-
 import * as RNElements from 'react-native-elements'
 
 let styles = {}
 
-const users = [
-  {
-    name: 'brynn',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
-  },
-  {
-    name: 'thot leader',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/evagiselle/128.jpg'
-  },
-  {
-    name: 'jsa',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg'
-  },
-  {
-    name: 'talhaconcepts',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/talhaconcepts/128.jpg'
-  },
-  {
-    name: 'andy vitale',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/andyvitale/128.jpg'
-  },
-  {
-    name: 'katy friedson',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg'
-  }
-]
+let articles = data.posts
 
 class Feed extends Component {
   constructor () {
@@ -64,24 +38,21 @@ class Feed extends Component {
         </View>
         <View style={styles.container}>
             {
-              users.map((u, i) => {
+              articles.map((article, index) => {
                 return (
-                  <Card containerStyle={{marginTop: 15}} title='Article' key={i} style={styles.user}>
-                    <View key={i} style={styles.user}>
+                  <Card containerStyle={{marginTop: 5}} key={index}>
+                    <Text style={styles.headline}>{article.headline}</Text>
+                    <View key={index} style={styles.user}>
                       <Image
-                        style={styles.image}
+                        style={{width: 100, height: 100}}
                         resizeMode='cover'
-                        source={{uri: u.avatar}} />
-                      <Text style={styles.name}>{u.name}</Text>
+                        source={{uri: article.imageUrl}} />
+                      <Text style={styles.name}>By: {article.author}</Text>
                     </View>
                   </Card>
                 )
               })
             }
-          <Card containerStyle={{marginTop: 15}} title='Article'>
-            <Image source={require('../images/rating.png')} style={styles.ratingImage}/>
-<Text style={styles.fonts}>Preview Text</Text>
-          </Card>
         </View>
       </ScrollView>
     )
@@ -89,19 +60,6 @@ class Feed extends Component {
 }
 
 styles = StyleSheet.create({
-  subtitleView: {
-    flexDirection: 'row',
-    paddingLeft: 10,
-    paddingTop: 5
-  },
-  ratingImage: {
-    height: 15,
-    width: 75
-  },
-  ratingText: {
-    paddingLeft: 10,
-    color: 'grey'
-  },
   container: {
     flex: 1
   },
@@ -109,7 +67,7 @@ styles = StyleSheet.create({
     marginTop: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 40,
+    padding: 5,
     backgroundColor: colors.secondary
   },
   heading: {
@@ -124,14 +82,19 @@ styles = StyleSheet.create({
     flexDirection: 'row',
     marginBottom: 6
   },
+  headline: {
+    fontSize:20,
+  },
   image: {
     width: 30,
     height: 30,
     marginRight: 10
   },
   name: {
-    fontSize: 16,
-    marginTop: 5
+    fontSize: 14,
+    marginTop: 5,
+    marginLeft: 10,
+    fontStyle: 'italic'
   },
   social: {
     flexDirection: 'row',
